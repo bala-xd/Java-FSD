@@ -1,0 +1,3 @@
+Exercise 1: Write a Java program that reads a file and displays the file on the screen, with a line number before each line?
+
+Exercise 2: Write a Java program that reads on file name from the user, and then displays information about whether the file exists, whether the file is readable, whether the file is writable, the type of file and the length of the file in bytes?  
