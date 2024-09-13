@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 
 public class FileRead {
     public static void main(String[] args) {
-        String file_path = "C:\\Users\\balamurugan.s\\Documents\\JAVA Practice\\day4_io\\com\\src\\sample.txt";
+        String file_path = "day4_io\\com\\src\\sample.txt";
         try {
             File obj = new File(file_path);
             Scanner sc = new Scanner(obj);

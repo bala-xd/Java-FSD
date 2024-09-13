@@ -2,7 +2,7 @@ package intCal.com.calc;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.util.function.Function;
+// import java.util.function.Function;
 
 public class InterestMain {
 
@@ -13,21 +13,21 @@ public class InterestMain {
             throw new InputMismatchException("Number must be positive!");
     }
 
-    private static <T> T validateInput(String prompt, Function<String, T> parser) {
-        T amount;
-        while (true){
-            try{
-                System.out.println("\n" + prompt);
-                amount = parser.apply(sc.nextLine());
-                validatePositive(amount);
-                break;
-            } catch (InputMismatchException e) {
-                System.out.println("Invalid Input... Try again!");
-                sc.nextLine();
-            }
-        }
-        return amount;
-    }
+    // private static <T> T validateInput(String prompt, Function<String, T> parser) {
+    //     T amount;
+    //     while (true){
+    //         try{
+    //             System.out.println("\n" + prompt);
+    //             amount = parser.apply(sc.nextLine());
+    //             // validatePositive(amount);
+    //             break;
+    //         } catch (InputMismatchException e) {
+    //             System.out.println("Invalid Input... Try again!");
+    //             sc.nextLine();
+    //         }
+    //     }
+    //     return amount;
+    // }
 
     private static double validateAmount(String prompt) {
         Double amount;
