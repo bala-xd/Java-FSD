@@ -9,8 +9,8 @@ public class HashSetClass {
         
         hs.add("JAVA");
         hs.add("Full Stack");
-        hs.add(new MyOwnStudent(101, "bala"));
-        hs.add(new MyOwnStudent(102, "siva"));
+        hs.add(new MyOwnStudent("bala", 61));
+        hs.add(new MyOwnStudent("siva", 90));
         hs.add(Integer.valueOf(23));
         hs.add(Integer.valueOf(18));
         hs.add(Integer.valueOf(33));

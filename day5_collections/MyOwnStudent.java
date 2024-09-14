@@ -1,23 +1,15 @@
 package day5_collections;
 
-public class MyOwnStudent {
-    private int rollno;
+public class MyOwnStudent implements Comparable<MyOwnStudent> {
     private String name;
+    private int marks;
 
-    public MyOwnStudent(int rollno, String name) {
-        this.rollno = rollno;
+    public MyOwnStudent(String name, int marks) {
         this.name = name;
+        this.marks = marks;
     }
     
     public MyOwnStudent() {
-    }
-
-    public int getRollno() {
-        return this.rollno;
-    }
-
-    public void setRollno(int rollno) {
-        this.rollno = rollno;
     }
 
     public String getName() {
@@ -28,13 +20,25 @@ public class MyOwnStudent {
         this.name = name;
     }
 
+    public int getMarks() {
+        return this.marks;
+    }
+
+    public void setMarks(int marks) {
+        this.marks = marks;
+    }
 
     @Override
     public String toString() {
         return "{" +
-            " rollno='" + getRollno() + "'" +
-            ", name='" + getName() + "'" +
+            " name='" + getName() + "'" +
+            ", marks='" + getMarks() + "'" +
             "}";
+    }
+
+    @Override
+    public int compareTo(MyOwnStudent obj) {
+        return obj.getMarks() - getMarks();
     }
 
 }
