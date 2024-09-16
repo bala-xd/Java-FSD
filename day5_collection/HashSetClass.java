@@ -1,4 +1,4 @@
-package day5_collections;
+package day5_collection;
 
 import java.util.HashSet;
 import java.util.Iterator;

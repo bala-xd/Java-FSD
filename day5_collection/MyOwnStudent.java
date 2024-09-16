@@ -1,4 +1,4 @@
-package day5_collections;
+package day5_collection;
 
 public class MyOwnStudent implements Comparable<MyOwnStudent> {
     private String name;
