@@ -29,4 +29,3 @@ public class TopFrequentWords {
         printTopNFrequentWords(words, 3);
     }
 }
-

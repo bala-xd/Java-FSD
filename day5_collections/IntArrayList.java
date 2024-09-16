@@ -16,15 +16,15 @@ public class IntArrayList {
     }
     public static void main(String[] args) {
         ArrayList<Integer> nums = new ArrayList<>();
-
+        int N = 10;
         Random rand = new Random();
 
-        for (int i = 0; i<10; i++)
+        for (int i = 0; i<N; i++)
             nums.add(rand.nextInt(100));
 
         System.out.println("List elements are:\n" + nums);
         System.out.println("\nThe odd numbers are:");
-        for (int i = 0; i<10; i++)
+        for (int i = 0; i<N; i++)
             if (nums.get(i)%2 == 1)
                 System.err.println(nums.get(i));
 
