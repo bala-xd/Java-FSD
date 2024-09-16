@@ -19,6 +19,42 @@ public class TopFrequentWords {
         }
     }
 
+    static class WordFrequency {
+        String word;
+        int frequency;
+
+        WordFrequency(String word, int frequency) {
+            this.word = word;
+            this.frequency = frequency;
+        }
+    }
+    
+    public static void printTopNFrequentWordsList(List<String> words, int N) {
+        List<WordFrequency> wordFrequencies = new ArrayList<>();
+        
+        for (String word : words) {
+            boolean found = false;
+            for (WordFrequency wf : wordFrequencies) {
+                if (wf.word.equals(word)) {
+                    wf.frequency++;
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                wordFrequencies.add(new WordFrequency(word, 1));
+            }
+        }
+        
+        wordFrequencies.sort((wf1, wf2) -> Integer.compare(wf2.frequency, wf1.frequency));
+        
+        System.out.println("Top " + N + " most frequent words:");
+        for (int i = 0; i < N && i < wordFrequencies.size(); i++) {
+            WordFrequency wf = wordFrequencies.get(i);
+            System.out.println(wf.word + ": " + wf.frequency);
+        }
+    }
+
     public static void main(String[] args) {
         List<String> words = Arrays.asList(
             "apple", "banana", "apple", "apple", "orange",
