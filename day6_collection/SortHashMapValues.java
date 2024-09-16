@@ -2,7 +2,7 @@ package day6_collection;
 
 import java.util.*;
 
-public class CollectionMain {
+public class SortHashMapValues {
 
     public static ArrayList<Integer> getValues(HashMap<String, Integer> hs) {
         ArrayList<Integer> values = new ArrayList<>(hs.values());
