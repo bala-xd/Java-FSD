@@ -1,4 +1,4 @@
-public class LambdaCLass {
+public class LambdaMain {
     public static void main(String as[]) {
         // Question 1
         XPowerY power = (x,y) -> (Math.pow(x,y));
