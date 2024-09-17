@@ -1,5 +1,7 @@
+package day6_lambda;
+
 public class LambdaMain {
-    public static void main(String as[]) {
+    public static void main(String[] as) {
         // Question 1
         XPowerY power = (x,y) -> (Math.pow(x,y));
         XPowerY power2 = Math::pow;
@@ -12,7 +14,7 @@ public class LambdaMain {
         FormatString fs = (s) -> {
             StringBuilder sb = new StringBuilder();
             for (int i=0; i<s.length(); i++) {
-                sb.append(s.charAt(i) + " ");
+                sb.append(s.charAt(i)).append(" ");
             }
             return sb.toString();
         };

@@ -1,5 +1,3 @@
-package day5_collection;
-
 import java.util.LinkedHashSet;
 import java.util.Iterator;
 

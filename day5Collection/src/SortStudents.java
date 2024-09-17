@@ -1,5 +1,3 @@
-package day5_collection;
-
 import java.util.*;
 
 public class SortStudents {

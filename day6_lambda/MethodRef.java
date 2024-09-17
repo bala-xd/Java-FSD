@@ -1,3 +1,5 @@
+package day6_lambda;
+
 public class MethodRef {
     public static String formatString(String s) {
         StringBuilder sb = new StringBuilder();

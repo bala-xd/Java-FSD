@@ -1,5 +1,3 @@
-package day5_collection;
-
 public class MyOwnStudent implements Comparable<MyOwnStudent> {
     private String name;
     private int marks;
