@@ -2,7 +2,7 @@ package day6_collection;
 
 import java.util.HashMap;
 
-public class SquaredClass {
+public class SquaredMap {
 
     public static HashMap<Integer, Integer> getSquares(int[] arr) {
         HashMap<Integer, Integer> squareMap = new HashMap<>();
