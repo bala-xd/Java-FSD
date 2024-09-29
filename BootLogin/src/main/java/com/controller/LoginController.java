@@ -24,14 +24,19 @@ public class LoginController {
 		return "index";
 	}
 	
-	@GetMapping("/reg")
-	public String register() {
+	@GetMapping("/register")
+	public String register(HttpSession ses) {
+		if (ses.getAttribute("user")!=null) return "redirect:/";
 		return "register";
 	}
 	
-	@PostMapping("/add")
+	@PostMapping("/register")
 	public String addUser(Model m, User u) {
 		String uid = service.createUser(u);
+		if (uid==null) {
+			m.addAttribute("msg", "Invalid data! Try again.");
+			return "register";
+		}
 		m.addAttribute("msg", "User with id: " + uid + " has been added!");
 		return "index";
 	}
@@ -87,4 +92,8 @@ public class LoginController {
 		return "index";
 	}
 	
+	@GetMapping("/error") 
+	public String errorPage() {
+		return "error";
+	}
 }

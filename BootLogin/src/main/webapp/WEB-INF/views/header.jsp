@@ -17,7 +17,7 @@
 	        <c:choose>
 	        	<c:when test="${empty sessionScope.user}">
 	                <a href="/login">Login</a>
-	                <a href="/reg">Register</a>
+	                <a href="/register">Register</a>
 	            </c:when>
 	            <c:otherwise>
 	                <a href="/logout">Logout</a>

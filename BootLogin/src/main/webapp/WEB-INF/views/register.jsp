@@ -10,7 +10,7 @@
     <%@ include file="header.jsp" %>
     <div class="container">
 	    <h2>Register</h2>
-	    <form action="add" method="post">
+	    <form action="register" method="post">
 	        <label for="userName">User Name</label>
 	        <input type="text" name="userName" id="userName" required>
 	
@@ -22,6 +22,8 @@
 	
 	        <label for="dob">Date of Birth</label>
 	        <input type="date" name="dob" id="dob" required>
+	        
+	        <div class="error-message">${msg}</div>
 	
 	        <button type="submit">Sign Up</button>
 	        

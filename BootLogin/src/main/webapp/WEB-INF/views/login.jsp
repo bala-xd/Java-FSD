@@ -22,7 +22,7 @@
 			<button type="submit">Login</button>
 			
 		    <span class="register-link">
-		        New User? <a href="/reg">Click here</a> to register.
+		        New User? <a href="/register">Click here</a> to register.
 		    </span>
 	    </form>
     </div>

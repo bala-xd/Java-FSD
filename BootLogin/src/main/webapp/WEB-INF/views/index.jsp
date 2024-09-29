@@ -14,7 +14,7 @@
                 <h3>${msg}</h3>
             </c:when>
             <c:otherwise>
-                <p>Please log in or register.</p>
+                <h3>Please log in or register.</h3>
             </c:otherwise>
         </c:choose>
     </div>
