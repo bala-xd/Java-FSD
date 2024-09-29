@@ -8,7 +8,9 @@
 </head>
 <body>
 	<div class="navbar">
-	    <h1>Login App</h1>
+	    <a href="/">
+	    	<h1>Login App</h1>
+	    </a>
 	    <nav>
 	        <a href="/">Home</a>
 	        <a href="/profile">Profile</a>
