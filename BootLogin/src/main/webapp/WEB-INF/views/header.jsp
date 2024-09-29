@@ -13,7 +13,7 @@
 	        <a href="/">Home</a>
 	        <a href="/profile">Profile</a>
 	        <c:choose>
-	            <c:when test="${user == null}">
+	        	<c:when test="${empty sessionScope.user}">
 	                <a href="/login">Login</a>
 	                <a href="/reg">Register</a>
 	            </c:when>
