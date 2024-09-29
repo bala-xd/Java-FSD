@@ -16,6 +16,7 @@ public class EmployeeMain {
                 months + " months." ;
         System.out.println(e.getFirstName() + " " + e.getLastName() + " - Service: " + duration);
     }
+
     public static void main(String[] args) {
         List<Employee> employees = EmployeeRepository.getEmployees();
         List<Department> depts = EmployeeRepository.getDepartments();
@@ -38,8 +39,15 @@ public class EmployeeMain {
                 deptInfo.put(deptName, deptInfo.get(deptName) + 1);
             }
         }
+//        Map<String, Long> deptC = new HashMap<>();
+//        deptC = employees.stream().collect(Collectors.groupingBy(
+//                (e) -> e.getDepartment()!=null ? e.getDepartment().getDepartmentName():"Unknown" , Collectors.counting()));
         System.out.println("\n2. Department names and count of employees in each department: ");
         deptInfo.forEach((dname, dcount) -> System.out.println(dname + " - " + dcount));
+//        deptC.forEach((dname, dcount) -> System.out.println(dname + " - " + dcount));
+//        deptC.entrySet().stream()
+//                .filter(entry -> entry.getValue() == 0)
+//                .forEach(entry -> System.out.println(entry.getKey()));
 
         //Q3
         System.out.println("\n3. Senior most employee of the organization: ");
